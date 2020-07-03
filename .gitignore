@@ -1,0 +1,11 @@
+*.exe
+*.bin
+.idea/
+.vscode/
+vendor
+Gopkg.lock
+vendor.orig
+gorillaz.iml
+vendor
+Gopkg.lock
+*.iml
