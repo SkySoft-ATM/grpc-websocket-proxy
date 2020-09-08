@@ -289,7 +289,7 @@ func (p *Proxy) proxy(w http.ResponseWriter, r *http.Request) {
 	// if maxRespBodyBufferSize has been specified, use custom buffer for scanner
 	var scannerBuf []byte
 	if p.maxRespBodyBufferBytes > 0 {
-		scannerBuf = make([]byte, 0, 64*1024)
+		scannerBuf = make([]byte, 0, p.maxRespBodyBufferBytes)
 		scanner.Buffer(scannerBuf, p.maxRespBodyBufferBytes)
 	}
 
