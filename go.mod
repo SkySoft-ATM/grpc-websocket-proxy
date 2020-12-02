@@ -1,4 +1,4 @@
-module github.com/matgabriel/grpc-websocket-proxy
+module github.com/skysoft-atm/grpc-websocket-proxy
 
 go 1.14
 
